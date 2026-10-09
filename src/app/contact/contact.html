@@ -1,0 +1,58 @@
+
+<section class="contact-page">
+  <h1>Contact Us</h1>
+
+  <p class="intro">
+    Have questions about our clubs or events? Get in touch with us.
+  </p>
+
+  <div class="contact-details">
+    <h2>University Club Office</h2>
+    <p><strong>Location:</strong> University Campus</p>
+    <p><strong>Email:</strong> clubs@example.com</p>
+    <p><strong>Office Hours:</strong> Monday to Friday, 9 AM – 5 PM</p>
+  </div>
+
+  <form #contactForm="ngForm" (ngSubmit)="sendMessage()">
+    <h2>Send a Message</h2>
+
+    <label for="name">Your Name</label>
+    <input
+      id="name"
+      type="text"
+      name="name"
+      [(ngModel)]="name"
+      required
+      placeholder="Enter your name"
+    />
+
+    <label for="email">Email Address</label>
+    <input
+      id="email"
+      type="email"
+      name="email"
+      [(ngModel)]="email"
+      required
+      email
+      placeholder="Enter your email"
+    />
+
+    <label for="message">Message</label>
+    <textarea
+      id="message"
+      name="message"
+      [(ngModel)]="message"
+      required
+      placeholder="Write your message"
+      rows="4"
+    ></textarea>
+
+    <button type="submit" [disabled]="contactForm.invalid">
+      Send Message
+    </button>
+
+    <p class="confirmation" aria-live="polite">
+      {{ confirmation }}
+    </p>
+  </form>
+</section>

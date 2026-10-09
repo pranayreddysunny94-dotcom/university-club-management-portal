@@ -1,0 +1,31 @@
+
+header {
+  background: #173b67;
+  color: white;
+  padding: 18px 30px;
+}
+
+header h2 {
+  margin: 0 0 15px;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover,
+nav a.active {
+  color: #ffd166;
+}
+
+main {
+  padding: 25px;
+}

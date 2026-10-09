@@ -1,0 +1,46 @@
+
+.events-page {
+  text-align: center;
+}
+
+.events-page h1 {
+  color: #173b67;
+  margin-bottom: 10px;
+}
+
+.intro {
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.event-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.event-card {
+  width: 280px;
+  padding: 22px;
+  background: #ffffff;
+  border: 1px solid #d7dfeb;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px #00000010;
+  text-align: left;
+}
+
+.event-card h2 {
+  color: #173b67;
+  font-size: 21px;
+}
+
+.event-card p {
+  line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+  .event-card {
+    width: 100%;
+  }
+}

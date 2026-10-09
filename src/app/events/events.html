@@ -1,0 +1,26 @@
+
+<section class="events-page">
+  <h1>University Events</h1>
+
+  <p class="intro">
+    Explore upcoming events and participate in university activities.
+  </p>
+
+  <div class="event-container">
+    @for (event of events; track event.name) {
+      <div class="event-card">
+        <h2>{{ event.name }}</h2>
+
+        <p>{{ event.description }}</p>
+
+        <p>
+          <strong>Date:</strong> {{ event.date }}
+        </p>
+
+        <p>
+          <strong>Venue:</strong> {{ event.venue }}
+        </p>
+      </div>
+    }
+  </div>
+</section>

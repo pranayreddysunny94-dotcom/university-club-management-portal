@@ -1,0 +1,22 @@
+
+<section class="clubs-page">
+  <h1>Our University Clubs</h1>
+
+  <p class="intro">
+    Discover your interests and join a club that matches your passion.
+  </p>
+
+  <div class="club-container">
+    @for (club of clubs; track club.name) {
+      <div class="club-card">
+        <h2>{{ club.name }}</h2>
+
+        <p>{{ club.description }}</p>
+
+        <p>
+          <strong>Coordinator:</strong> {{ club.coordinator }}
+        </p>
+      </div>
+    }
+  </div>
+</section>

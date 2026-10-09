@@ -1,0 +1,88 @@
+
+.contact-page {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.contact-page h1,
+.intro {
+  text-align: center;
+}
+
+.contact-page h1 {
+  color: #173b67;
+}
+
+.intro {
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.contact-details,
+form {
+  background: #ffffff;
+  border: 1px solid #d7dfeb;
+  border-radius: 10px;
+  padding: 22px;
+  margin-bottom: 22px;
+  box-shadow: 0 3px 8px #00000010;
+}
+
+.contact-details h2,
+form h2 {
+  color: #173b67;
+}
+
+.contact-details p {
+  line-height: 1.6;
+}
+
+label {
+  display: block;
+  margin: 15px 0 6px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  display: block;
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #cbd5e1;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+  outline: 2px solid #8db9f0;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background: #173b67;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover:not(:disabled) {
+  background: #24558c;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.confirmation {
+  text-align: center;
+  color: #176b35;
+  margin-top: 15px;
+}
